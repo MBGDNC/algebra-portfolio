@@ -43,3 +43,11 @@ body {
 .text-align-justify {
     text-align: justify;
 }
+.link {
+    text-decoration: none;
+}
+.fancy {
+    text-shadow: 0px 2px 0px rgba(255, 0, 0, 1);
+    text-shadow: 0px 4px 0px rgba(0, 255, 0, 1);
+    text-shadow: 0px 6px 0px rgba(0, 0, 255, 1);
+}
