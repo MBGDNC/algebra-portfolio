@@ -9,6 +9,8 @@ html {
 }
 .h6 {
     font-size: 1.33rem;
+    font-weight: 700;
+    font-style: italic;
 }
 .h5 {
     font-size: 1.66rem;
