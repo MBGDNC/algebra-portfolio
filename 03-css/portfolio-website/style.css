@@ -77,7 +77,7 @@ body {
 }
 .cookies {
     position: fixed;
-    bottom: 25px;
+    bottom: 5px;
     left: 0;
     right: 0;
     text-align: center;
@@ -87,7 +87,7 @@ body {
     background-color: rgb(97, 97, 97);
     padding: 10px 0;
     display: inline-block;
-    border-radius: 30px;
+    border-radius: 15px;
     color: white;
 }    
 .button-yes .button-no {
@@ -104,7 +104,7 @@ body {
 .profile-image {
     display: block;
     width: 150px;
-    border-radius: 30px;
+    border-radius: 15px;
     border-width: 10px;
     border-style: solid; 
     border-color: rgb(204, 236, 206);
@@ -112,7 +112,7 @@ body {
 .project {
     background: white;
     padding: 16px;
-    border-radius: 30px;
+    border-radius: 15px;
     border-width: 10px;
     border-style: solid;
     border-color: rgb(204, 236, 206);
@@ -133,7 +133,7 @@ body {
     font-size: 1rem;
     line-height: 1rem;
     padding: 12px 16px;
-    border-radius: 30px;
+    border-radius: 15px;
 }
 .project_link:hover {
     text-decoration: underline;
@@ -148,7 +148,7 @@ body {
     background-color: rgb(97, 97, 97);
     padding: 4px 8px;
     color: rgb(204, 236, 206);
-    border-radius: 30px;
+    border-radius: 15px;
     margin-right: 8px;
     margin-top: 4px;
     margin-bottom: 4px;
@@ -167,7 +167,24 @@ li:hover {
 .tooltip_message {
     display: none;
     position: absolute;
+    bottom: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    width: 100%;
+    border-radius: 15px;
 }
 .tooltip:hover .tooltip_message {
     display: inline-block
+}
+.float_row {
+    margin: 0 -16px;
+}
+.float_column {
+    float: left;
+    width: calc(50% - 32px);
+    margin: 0 16px;
 }
