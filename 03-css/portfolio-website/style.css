@@ -76,7 +76,7 @@ body {
     box-sizing: border-box;
 }
 .cookies {
-    position: fixed;
+    /* position: fixed; */
     bottom: 5px;
     left: 0;
     right: 0;
@@ -157,7 +157,7 @@ body {
 .project_list li+li:last-child {
     margin-right: 0px;
 }
-li:hover {
+.project_list li:hover {
     background-color: rgb(204, 236, 206);
     color: rgb(97, 97, 97);
 }
@@ -187,4 +187,21 @@ li:hover {
     float: left;
     width: calc(50% - 32px);
     margin: 0 16px;
+}
+.navigation {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+.navigation_item {
+    display: block;
+    background: black;
+    padding: 8px 16px;
+}
+.navigation_item a {
+    color: white;
 }
