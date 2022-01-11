@@ -2,6 +2,11 @@ html {
     font-size: 16px; /* 1rem - root em*/
     font-family: 'Outfit', sans-serif;
 }
+@media screen and (max-width: 768px) {
+    html {
+    font-size: 14px;
+    }
+}
 body {
     color: #333;
     line-height: 1;
@@ -10,7 +15,6 @@ body {
     url("./pattern2.jpg") top right/160px repeat-y,
     url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAEFJREFUKFNjFL3I8p+BCMBIssLX+n/A5opeZAHT6Hy4iUQrhDkTXQNMHMWNMEUwSZgzQHzyFSJ7BqeJ+IKT6HAEAASDLiUtcahCAAAAAElFTkSuQmCC) top left/60px repeat,
     linear-gradient(90deg, rgba(0,29,8,1) 0%, rgba(0,171,163,1) 100%); */
-    
 }
 .p {
     font-size: 1rem;
@@ -143,6 +147,12 @@ body {
     transform: scale(1.1);
     transition: 0.5s linear;
 }
+@media screen and (max-width: 768px) {
+    .project_link {
+        width: 90%;
+        text-align: center;
+    }
+}
 .project_list {
     margin: 0;
     padding: 0;
@@ -181,7 +191,7 @@ body {
     border-radius: 15px;
 }
 .tooltip:hover .tooltip_message {
-    display: inline-block
+    display: inline-block;
 }
 .float_row {
     margin: 0 -16px;
@@ -264,6 +274,17 @@ body {
 .header-description {
     flex-grow: 1;
     padding-left: 32px;
+}
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-description {
+        margin-left: 0;
+        text-align: center;
+        padding-left: 0px;
+    }
 }
 @keyframes blink {
     0% {
