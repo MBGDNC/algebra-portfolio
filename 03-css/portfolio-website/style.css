@@ -36,7 +36,7 @@ body {
 .h2 {
     font-size: 2.66rem;
 }
-h1 {
+.h1 {
     font-size: 3rem;
 }
 .text-align-left {
@@ -264,4 +264,28 @@ h1 {
 .header-description {
     flex-grow: 1;
     padding-left: 32px;
+}
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0%;
+    }
+}
+@keyframes jumping {
+    0% {
+        transform: translateY(30px);
+    }
+    100% {
+        transform: translateY(-30px);
+    }
+}
+.blinking {
+    animation: blink 3s ease-in-out 0s alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.animation {
+    animation: jumping 3s infinite alternate forwards;
 }
